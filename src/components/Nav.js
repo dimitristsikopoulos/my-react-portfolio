@@ -5,13 +5,19 @@ const Nav = () => {
   return (
     <NavContainer>
       <Logo>
-        <a href="">Dimitris Tsikopoulos</a>
+        <a href="#">Dimitris Tsikopoulos</a>
       </Logo>
       <NavList>
         <ul>
-          <li>Home</li>
-          <li>My Work</li>
-          <li>Contact me</li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">My Work</a>
+          </li>
+          <li>
+            <a href="#">Contact me</a>
+          </li>
         </ul>
       </NavList>
     </NavContainer>
@@ -42,6 +48,8 @@ const Logo = styled.div`
     padding-top: 0.5rem;
     font-size: 1.5rem;
     font-family: "Yellowtail", cursive;
+    color: black;
+    text-decoration: none;
   }
 `;
 
@@ -55,6 +63,14 @@ const NavList = styled.div`
     align-items: center;
     justify-content: space-around;
     list-style: none;
+  }
+  li a {
+    color: black;
+    text-decoration: none;
+  }
+  li a:hover {
+    color: white;
+    text-decoration: none;
   }
 `;
 
